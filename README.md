@@ -1,2 +1,5 @@
-# website
-Creating a finalized personal website 
+Personal Website modified from the Strata template from HTML5 UP
+
+Strata by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
