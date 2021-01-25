@@ -33,6 +33,10 @@ body {
 	line-height: 1;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 ol, ul {
 	list-style: none;
 }
@@ -3346,3 +3350,13 @@ input, select, textarea {
 				}
 
 		}
+
+
+.nav-bar {
+	margin-top: 1em;
+	display: flex;
+	max-width: inherit;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
