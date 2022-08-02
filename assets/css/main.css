@@ -1,18 +1,48 @@
-#header {
+.header {
 	margin: auto;
-	width: 50%;
 	padding: 10px;
+	align-items:center;
+	display: flex;
+	justify-content: space-between;
 }
+
+
+#name {
+	padding-right: 10%;
+	color: #720596;
+	font-size: 30px;
+	font-family: Garamond, Times New Roman, fixed-width;
+	float:left 
+}
+
 ul.nav {
 	list-style-type: none;
-	margin: auto;
+	float: right;
 	padding: 0;
 	overflow: hidden;
-	text-align: center;
 }
+
 li.nav {
 	display: block;
 	float: left;
-	padding: 4px 16px;
+	padding: 4px 4px;
 
+}
+
+
+li a.nav {
+	display: block;
+	color:black;
+	text-align: center;
+	padding: 4px 16px;
+	text-decoration: none;
+}
+
+body {
+	background-color: white;
+}
+
+.main-body {
+	margin-left: 25%;
+	margin-right: 25%;
 }
