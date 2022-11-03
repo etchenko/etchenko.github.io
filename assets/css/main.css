@@ -108,6 +108,7 @@ img.headshot {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding-bottom: 5%;
 }
 
 .links #link {
@@ -116,4 +117,5 @@ img.headshot {
 
 footer {
 	text-align: center;
+	
 }
