@@ -29,10 +29,21 @@ export class HomeComponent {
   ];
 
   news = [
-    {date: "June 2023", content: "Finished my thesis!"},
-    {date: "Mar 2023", content: "Presented a talk at Williams College on LDA topic modelling"},
-    {date: "Jun 2022", content: "I started summer research with Rohit Bhattacharya, looking into estimating and comparing entire counterfactual distributions."},
-    {date: "Sep 2022", content: "I started my undergraduate thesis working on applying ML model selection techniques to Causal Inference."},
+    {
+      date: "July 2023", 
+      content: "Started a full-time position as a Software Engineer on the Applications Services team at InterSystems"
+    },
+    {
+      date: "June 2023", 
+      content: "Graduated from Williams College with a B.A. in Computer Science and Statistics",
+    },
+    {
+      date: "May 2023", 
+      content: "Finished my undergraduate thesis (Advisor: Prof. Rohit Bhattacharya)",
+      link: "/assets/Elijah_Tamarchenko_Thesis.pdf",
+      linkText: "Combining Optimal Adjustment Set Selection and Post Selection Inference in Unknown Causal Graphs."
+    },
+    {date: "Mar 2023", content: "Presented a colloquium talk at Williams College about LDA Topic Modelling"},
     {date: "Aug 2022", content: "Presented a poster about distributional causal inference at the Williams College Summer Science Poster Session."},
     {date: "Nov 2022", content: "I was an invited speaker for the Williams Undergraduate Research Journal (WURJ) 2022-23 Research Colloquium."},
   ];
