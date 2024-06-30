@@ -1,0 +1,24 @@
+<div class = "main">
+    <div class = "personal">
+        <img class = "headshot" src="/assets/img/headshot.jpeg" alt="Headshot">
+        <div>
+            <p class="email"> elijahtamarchenko[at]gmail.com</p>
+            <div class = 'links' >
+                <a [href]="link.link" id="link" *ngFor="let link of links" target="_blank">
+                    <fa-icon [icon]="link.icon" size="2x"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class = "info">
+        <h1>About</h1>
+        <p *ngFor="let line of about">{{line}}</p>
+        <h1>Recent</h1>
+        <table>
+            <tr *ngFor="let item of news">
+                <td width="100px">{{item.date}}</td>
+                <td>{{item.content}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

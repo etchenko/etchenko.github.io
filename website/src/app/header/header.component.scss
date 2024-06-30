@@ -1,0 +1,51 @@
+
+.header {
+	//margin: auto;
+	padding: 10px;
+	align-items:center;
+	display: flex;
+    flex-wrap: nowrap;
+	justify-content: space-between;
+	//position: fixed;
+	width: 100%;
+	background-color: white;
+    margin: auto;
+}
+
+li a.active {
+    //color:pu !important;
+    font-weight: bold;
+}
+
+ul.nav {
+	list-style-type: none;
+	float: right;
+	padding: 0;
+	overflow: hidden;
+}
+
+li.nav {
+	display: block;
+	float: left;
+	padding: 4px 4px;
+}
+
+
+li a.nav {
+	display: block;
+	text-align: center;
+	padding: 4px 16px;
+    color: black;
+	text-decoration: none;
+    font-size: 20px;
+}
+
+#name {
+	padding-right: 10%;
+	color: #720596;
+	font-size: 30px;
+	font-family: Garamond, Times New Roman, fixed-width;
+	float:left;
+    width: 100%;
+}
+

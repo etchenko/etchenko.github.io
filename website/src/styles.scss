@@ -1,0 +1,25 @@
+
+
+
+body {
+	background-color: white;
+    min-width: 500px;
+    max-width: 1200px;
+    margin: auto;
+	//margin-left: 20%;
+	//margin-right: 20%;
+    font-size: 18px;
+}
+
+.main {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+
+footer {
+	text-align: center;
+	
+}
