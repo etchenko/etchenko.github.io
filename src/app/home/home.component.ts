@@ -25,7 +25,7 @@ export class HomeComponent {
     { link: 'https://github.com/etchenko', icon: faGithub },
     { link: 'https://www.linkedin.com/in/etchenko/', icon: faLinkedin},
     { link: "mailto:elijahtamarchenko@gmail.com", icon: faEnvelope},
-    { link: "/assets/resume.pdf", icon: faFileAlt},
+    { link: "/assets/ElijahTamarchenkoCV.pdf", icon: faFileAlt},
   ];
 
   news = [
