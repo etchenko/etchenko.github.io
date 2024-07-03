@@ -17,8 +17,11 @@ export class HomeComponent {
 
   about = [
     "Hi! I'm Elijah Tamarchenko, a software engineer based in Boston.",
-    "My main research interests lie in the intersection of Causal Inference and Machine Learning, where I want to develop methods for estimating causal effects in complex, high-dimensional settings. ",
-    "I graduated from Williams College in 2023 with a B.A. in Computer Science and Statistics. ",
+    "I'm interested in causal inference and machine learning, more specifically in developing new machine learning methods for counterfactual estimation"+
+    " and exploring the fundamental assumptions in modern causal inference methods.",
+    "My undergraduate thesis was focused on developing a procedure that performs both covariate selection and effect estimation"+
+    "in a single step (See the 'Recent' section below for a link to the full pdf)",
+    "I graduated from Williams College in 2023 with a B.A. in Computer Science and Statistics (and a minor in Cognitive Science). ",
   ]
 
   links = [
