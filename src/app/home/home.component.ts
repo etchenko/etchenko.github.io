@@ -17,8 +17,9 @@ export class HomeComponent {
 
   about = [
     "Hi! I'm Elijah Tamarchenko, a software engineer based in Boston.",
-    "I'm interested in causal inference and machine learning, more specifically in developing new machine learning methods for counterfactual estimation"+
-    " and exploring the fundamental assumptions in modern causal inference methods.",
+    "I am deeply interested in questions uncertainty, and in the limits of using statistical methods on finite data points to make inferences regarding the nature of continuous natural processes.",  
+    "I am specifically interested in the role of uncertainty and the limitations of real world data as applied to causal inference methodology, and in exploring how much scientists can trust inferences made based on non-experimental data.",
+    "I plan on using this perspective to develop new machine learning methods for counterfactual estimation, with a focus on creating reliable bounds on the uncertainty of these estimates.",
     "My undergraduate thesis was focused on developing a procedure that performs both covariate selection and effect estimation"+
     "in a single step (See the 'Recent' section below for a link to the full pdf)",
     "I graduated from Williams College in 2023 with a B.A. in Computer Science and Statistics (and a minor in Cognitive Science). ",
