@@ -28,7 +28,7 @@ export class HomeComponent {
   links = [
     { link: 'https://github.com/etchenko', icon: faGithub },
     { link: 'https://www.linkedin.com/in/etchenko/', icon: faLinkedin},
-    { link: "mailto:elijahtamarchenko@gmail.com", icon: faEnvelope},
+    { link: "mailto:etchenko@pm.me", icon: faEnvelope},
     { link: "/assets/ElijahTamarchenkoCV.pdf", icon: faFileAlt},
   ];
 
