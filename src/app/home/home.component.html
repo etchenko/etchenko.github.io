@@ -1,28 +1,34 @@
-<div class = "main">
-    <div class = "personal">
-        <img class = "headshot" src="/assets/img/headshot.jpeg" alt="Headshot">
-        <div>
-            <p class="email"> etchenko[at]pm.me</p>
-            <div class = 'links' >
-                <a [href]="link.link" id="link" *ngFor="let link of links" target="_blank">
-                    <fa-icon [icon]="link.icon" size="2x"/>
+<section class="main">
+    <aside class="personal" aria-labelledby="hero-title">
+        <img class="headshot" src="/assets/img/headshot.jpeg" alt="Portrait of Elijah Tamarchenko" width="900" height="1200" fetchpriority="high" decoding="async">
+        <div class="profile-copy">
+            <h2 id="hero-title" class="hero-title">{{heroTitle}}</h2>
+            <p class="hero-subtitle">{{heroSubtitle}}</p>
+            <p class="email">etchenko[at]pm.me</p>
+            <div class="links">
+                <a [href]="link.link" class="icon-link" *ngFor="let link of links" [attr.aria-label]="link.label" target="_blank" rel="noopener noreferrer">
+                    <fa-icon [icon]="link.icon" size="2x" />
+                    <span class="sr-only">{{link.label}}</span>
                 </a>
             </div>
         </div>
-    </div>
-    <div class = "info">
-        <h1>About</h1>
+    </aside>
+
+    <section class="info">
+        <h2 class="section-title">About</h2>
         <p *ngFor="let line of about">{{line}}</p>
-        <h1>Recent</h1>
+
+        <h2 class="section-title recent-title">Recent</h2>
         <table>
             <tr *ngFor="let item of news">
-                <td width="100px">{{item.date}}</td>
+                <td width="110px">{{item.date}}</td>
                 <td>
-                    {{item.content}}<ng-container *ngIf="item.link">:
-                        <a [href]="item.link" target="_blank">{{item.linkText}}</a>
+                    {{item.content}}
+                    <ng-container *ngIf="item.link">
+                        : <a [href]="item.link" target="_blank">{{item.linkText}}</a>
                     </ng-container>
                 </td>
             </tr>
         </table>
-    </div>
-</div>
+    </section>
+</section>

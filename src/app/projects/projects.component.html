@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<section class="projects-page">
+	<h2 class="section-title">Projects</h2>
+	<p class="intro">
+		A selection of research and technical work focused on causal inference, statistical methodology, and applied machine learning.
+	</p>
+
+	<div class="project-grid">
+		<article class="project-card" *ngFor="let project of projects">
+			<h3>{{project.title}}</h3>
+			<p><strong>Problem:</strong> {{project.problem}}</p>
+			<p><strong>Method:</strong> {{project.method}}</p>
+			<p class="outcome"><strong>Outcome:</strong> {{project.outcome}}</p>
+
+			<div class="tag-row">
+				<span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
+			</div>
+
+			<div class="link-row" *ngIf="project.links.length > 0">
+				<a *ngFor="let link of project.links" [href]="link.href" target="_blank">{{link.label}}</a>
+			</div>
+		</article>
+	</div>
+</section>

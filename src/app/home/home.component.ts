@@ -14,28 +14,29 @@ import { faFileAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+  heroTitle = "Master's Student in Statistics";
+  heroSubtitle = 'Focused on causal inference, uncertainty quantification, and trustworthy machine learning.';
 
   about = [
-    "Hi! I'm Elijah Tamarchenko, a software engineer based in Boston.",
-    "I am deeply interested in questions uncertainty, and in the limits of using statistical methods on finite data points to make inferences regarding the nature of continuous natural processes.",  
-    "I am specifically interested in the role of uncertainty and the limitations of real world data as applied to causal inference methodology, and in exploring how much scientists can trust inferences made based on non-experimental data.",
-    "I plan on using this perspective to develop new machine learning methods for counterfactual estimation, with a focus on creating reliable bounds on the uncertainty of these estimates.",
-    "My undergraduate thesis was focused on developing a procedure that performs both covariate selection and effect estimation"+
-    "in a single step (See the 'Recent' section below for a link to the full pdf)",
-    "I graduated from Williams College in 2023 with a B.A. in Computer Science and Statistics (and a minor in Cognitive Science). ",
-  ]
+    "Hi! I'm Elijah Tamarchenko, a Master's student in Statistics and software engineer based in Boston.",
+    "I work on uncertainty quantification and causal inference, especially when data is finite, noisy, or observational.",
+    "My research focus is counterfactual estimation: how to build methods that are both accurate and honest about uncertainty.",
+    "I am particularly interested in post-selection inference, causal graph structure, and practical ML systems for scientific decision-making.",
+    "My undergraduate thesis developed a procedure that performs covariate selection and treatment effect estimation in a single step.",
+    "I graduated from Williams College in 2023 with a B.A. in Computer Science and Statistics and a minor in Cognitive Science.",
+  ];
 
   links = [
-    { link: 'https://github.com/etchenko', icon: faGithub },
-    { link: 'https://www.linkedin.com/in/etchenko/', icon: faLinkedin},
-    { link: "mailto:etchenko@pm.me", icon: faEnvelope},
-    { link: "/assets/ElijahTamarchenkoCV.pdf", icon: faFileAlt},
+    { link: 'https://github.com/etchenko', icon: faGithub, label: 'GitHub profile' },
+    { link: 'https://www.linkedin.com/in/etchenko/', icon: faLinkedin, label: 'LinkedIn profile'},
+    { link: 'mailto:etchenko@pm.me', icon: faEnvelope, label: 'Email Elijah'},
+    { link: '/assets/ElijahTamarchenkoCV.pdf', icon: faFileAlt, label: 'Curriculum vitae PDF'},
   ];
 
   news = [
     {
       date: "July 2023", 
-      content: "Started a full-time position as a Software Engineer on the Applications Services team at InterSystems"
+      content: "Started a full-time position as a Software Engineer on the Application Services team at InterSystems"
     },
     {
       date: "June 2023", 
@@ -45,9 +46,9 @@ export class HomeComponent {
       date: "May 2023", 
       content: "Finished my undergraduate thesis (Advisor: Prof. Rohit Bhattacharya)",
       link: "/assets/Elijah_Tamarchenko_Thesis.pdf",
-      linkText: "Combining Optimal Adjustment Set Selection and Post Selection Inference in Unknown Causal Graphs."
+      linkText: "Combining optimal adjustment set selection and post-selection inference in unknown causal graphs"
     },
-    {date: "Mar 2023", content: "Presented a colloquium talk at Williams College about LDA Topic Modelling"},
+    {date: "Mar 2023", content: "Presented a colloquium talk at Williams College on LDA topic modeling"},
     {date: "Aug 2022", content: "Presented a poster about distributional causal inference at the Williams College Summer Science Poster Session."},
     {date: "Nov 2022", content: "I was an invited speaker for the Williams Undergraduate Research Journal (WURJ) 2022-23 Research Colloquium."},
   ];

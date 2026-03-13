@@ -1,10 +1,12 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ResearchComponent } from './research/research.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
   { path: 'home', component: HomeComponent },
+  { path: 'research', component: ResearchComponent},
   { path: 'projects', component: ProjectsComponent},
   /*{
     path: 'product/:id', component: ProductComponent,

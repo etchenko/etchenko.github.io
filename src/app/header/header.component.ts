@@ -14,8 +14,8 @@ export class HeaderComponent {
 
   links = [
     { link: '/home', text: 'Home' },
-    //{ link: '/research', text: 'Research' },
-    //{ link: '/projects', text: 'Projects' },
+    { link: '/research', text: 'Research' },
+    { link: '/projects', text: 'Projects' },
     //{ link: '/blog', text: 'Blog' },
     //{ link: '/contact', text: 'Contact' },
   ];

@@ -1,7 +1,14 @@
-<div class = "header">
-    <a routerLink="/home"><h1 id = "name"><strong>elijah tamarchenko</strong></h1></a>
-    <ul class="nav">
-        <li class="nav" *ngFor="let link of links"><a [routerLink]="link.link" class="nav" [routerLinkActive]="['active']" >{{link.text}}</a></li>
-        <li class="nav"><a href="/assets/ElijahTamarchenkoCV.pdf" class="nav" target="_blank">CV</a></li>
-    </ul>
-</div>
+<header class="header">
+    <a routerLink="/home" class="brand-link">
+        <h1 id="name"><strong>Elijah Tamarchenko</strong></h1>
+    </a>
+
+    <nav aria-label="Primary navigation">
+        <ul class="nav">
+            <li class="nav" *ngFor="let link of links">
+                <a [routerLink]="link.link" class="nav" [routerLinkActive]="['active']">{{link.text}}</a>
+            </li>
+            <li class="nav"><a href="/assets/ElijahTamarchenkoCV.pdf" class="nav" target="_blank">CV</a></li>
+        </ul>
+    </nav>
+</header>
