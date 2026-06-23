@@ -1,14 +1,18 @@
 <header class="header">
-    <a routerLink="/home" class="brand-link">
+    <a href="/" class="brand-link">
         <h1 id="name"><strong>Elijah Tamarchenko</strong></h1>
     </a>
+
+    <section class="header-simulation" aria-hidden="true">
+        <canvas #samplingCanvas class="simulation-canvas"></canvas>
+    </section>
 
     <nav aria-label="Primary navigation">
         <ul class="nav">
             <li class="nav" *ngFor="let link of links">
-                <a [routerLink]="link.link" class="nav" [routerLinkActive]="['active']">{{link.text}}</a>
+                <a [href]="link.link" class="nav">{{link.text}}</a>
             </li>
-            <li class="nav"><a href="/assets/ElijahTamarchenkoCV.pdf" class="nav" target="_blank">CV</a></li>
+            <li class="nav"><a href="/assets/ElijahTamarchenkoCV.pdf" class="nav" target="_blank" rel="noopener noreferrer">CV</a></li>
         </ul>
     </nav>
 </header>

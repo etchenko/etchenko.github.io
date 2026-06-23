@@ -1,22 +1,33 @@
 .header {
-	padding: 1.1rem 0 0.9rem;
+	padding: 1.15rem 0 0.85rem;
 	align-items: center;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: space-between;
-	gap: 0.75rem;
+	gap: 1.25rem;
 	width: 100%;
+}
+
+.header-simulation {
+	flex: 1 1 220px;
+	height: 46px;
+	min-width: 140px;
+	max-width: 360px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+
+.simulation-canvas {
+	width: 100%;
+	height: 44px;
+	display: block;
+	background: transparent;
 }
 
 .brand-link {
 	text-decoration: none;
-}
-
-li a.active {
-	font-weight: 700;
-	color: #18181b;
-	text-decoration: underline;
-	text-decoration-thickness: 1.5px;
 }
 
 ul.nav {
@@ -24,7 +35,7 @@ ul.nav {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	gap: 0.85rem;
+	gap: 1rem;
 	padding: 0;
 	margin: 0;
 }
@@ -39,26 +50,33 @@ li a.nav {
 	padding: 0.2rem 0;
 	color: #3f3f46;
 	text-decoration: none;
-	font-size: 0.98rem;
+	font-size: 0.93rem;
+	letter-spacing: 0.01em;
 	transition: color 0.2s ease;
 }
 
 li a.nav:hover {
 	color: #18181b;
 	text-decoration: underline;
+	text-decoration-thickness: 1.2px;
 }
 
 #name {
 	color: #720596;
-	font-size: 1.75rem;
+	font-size: 1.7rem;
 	font-weight: 700;
-	letter-spacing: -0.01em;
+	letter-spacing: -0.005em;
 }
 
 @media (max-width: 700px) {
 	.header {
+		flex-wrap: wrap;
 		justify-content: center;
 		padding-top: 0.9rem;
+	}
+
+	.header-simulation {
+		display: none;
 	}
 
 	#name {
